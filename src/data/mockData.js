@@ -203,3 +203,101 @@ export const SOCIAL_LINKS = [
   { name: 'LinkedIn', url: 'https://linkedin.com/company/filmsunfiltered_demo', handle: 'Films Unfiltered' },
   { name: 'Facebook', url: 'https://facebook.com/filmsunfiltered_demo', handle: 'filmsunfiltered' },
 ];
+
+/**
+ * Categories for the Discover Artists section filter tabs
+ */
+export const DISCOVER_FILTER_CATEGORIES = [
+  { id: 'all', label: 'All Artists' },
+  { id: 'singers', label: 'Singers' },
+  { id: 'djs', label: 'DJs' },
+  { id: 'actors', label: 'Actors' },
+  { id: 'comedians', label: 'Comedians' },
+  { id: 'dancers', label: 'Dancers' },
+  { id: 'filmmakers', label: 'Filmmakers' },
+];
+
+/**
+ * Editorial Profiles for the "Discover Artists" section
+ * NOTE: All profiles are fictional demonstration profiles for frontend presentation.
+ */
+export const DISCOVER_ARTISTS = [
+  {
+    id: 'aria-vance',
+    name: 'Aria Vance',
+    category: 'singers',
+    role: 'Singer & Songwriter',
+    location: 'Delhi',
+    bio: 'Soulful indie-pop vocalist blending intimate acoustic songwriting with atmospheric live sets.',
+    image: '/artists/singer_stage_lights.jpg',
+    specialty: 'Indie Pop · Live Acoustic',
+    collaborations: 'Open for session vocals & songwriting collaborations',
+    experience: '8+ Years Live',
+    demoTag: 'Demo Profile',
+  },
+  {
+    id: 'dj-kairo',
+    name: 'DJ Kairo',
+    category: 'djs',
+    role: 'DJ & Producer',
+    location: 'Noida',
+    bio: 'Electronic producer crafting deep melodic techno journeys and peak-time club experiences.',
+    image: '/artists/dj.jpg',
+    specialty: 'Melodic Techno · Sound Design',
+    collaborations: 'Looking for vocalists & visual stage designers',
+    experience: 'Resident DJ',
+    demoTag: 'Demo Profile',
+  },
+  {
+    id: 'maya-lin',
+    name: 'Maya Lin',
+    category: 'actors',
+    role: 'Actor',
+    location: 'Mumbai',
+    bio: 'Method actor with a background in experimental theatre, voice work, and indie narrative films.',
+    image: '/artists/actor_curly.jpg',
+    specialty: 'Independent Film · Stage Drama',
+    collaborations: 'Available for short films, features & script readings',
+    experience: 'Theatre & Film',
+    demoTag: 'Demo Profile',
+  },
+  {
+    id: 'zayn-mehta',
+    name: 'Zayn Mehta',
+    category: 'comedians',
+    role: 'Stand-up Comedian',
+    location: 'Bengaluru',
+    bio: 'Sharp observational comic known for high-relatability crowd work and touring club specials.',
+    image: '/artists/comedian_stage.jpg',
+    specialty: 'Stand-up · Improv & Sketch',
+    collaborations: 'Writing rooms & comedy festival showcases',
+    experience: 'Touring Comic',
+    demoTag: 'Demo Profile',
+  },
+  {
+    id: 'tara-sen',
+    name: 'Tara Sen',
+    category: 'dancers',
+    role: 'Dancer & Choreographer',
+    location: 'Delhi',
+    bio: 'Contemporary movement artist exploring cinematic narrative storytelling and physical theatre.',
+    image: '/artists/dancer_leap.jpg',
+    specialty: 'Contemporary · Cinematic Choreography',
+    collaborations: 'Music videos, stage direction & brand films',
+    experience: 'Choreographer',
+    demoTag: 'Demo Profile',
+  },
+  {
+    id: 'devin-cole',
+    name: 'Devin Cole',
+    category: 'filmmakers',
+    role: 'Filmmaker',
+    location: 'Pune',
+    bio: 'Cinematographer and director focusing on rich low-light aesthetics, music videos, and documentaries.',
+    image: '/artists/cam_operator.jpg',
+    specialty: 'Cinematography · Narrative Directing',
+    collaborations: 'Co-directing, camera crew & color grading',
+    experience: 'Director of Photography',
+    demoTag: 'Demo Profile',
+  },
+];

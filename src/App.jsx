@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import DiscoverArtists from './components/DiscoverArtists';
 import Footer from './components/Footer';
 import AuthModal from './components/AuthModal';
 import NavigationNoticeModal from './components/NavigationNoticeModal';
@@ -29,9 +30,13 @@ export default function App() {
         onOpenNavNotice={handleOpenNavNotice}
       />
 
-      {/* Main Hero Presentation */}
+      {/* Main Page Presentation */}
       <main className="flex-1 flex flex-col justify-center">
         <Hero />
+        <DiscoverArtists
+          onOpenNavNotice={handleOpenNavNotice}
+          onOpenAuth={handleOpenAuth}
+        />
       </main>
 
       {/* Premium, Modern, Fully Responsive Footer */}
