@@ -22,7 +22,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#080B10] text-[#F7F7F8] selection:bg-[#FF3366] selection:text-white flex flex-col justify-between">
+    <div className="min-h-screen bg-[#000000] text-[#FFFFFF] selection:bg-[#F45132] selection:text-white flex flex-col justify-between">
       {/* Responsive Navigation Bar with Functional Handlers */}
       <Navbar
         onOpenAuth={handleOpenAuth}

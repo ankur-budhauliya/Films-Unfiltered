@@ -122,26 +122,26 @@ export default function NavigationNoticeModal({ isOpen, onClose, destinationKey 
     >
       <div
         ref={modalRef}
-        className="relative w-full max-w-lg bg-[#101722] border border-white/15 rounded-3xl shadow-[0_25px_70px_rgba(0,0,0,0.95)] overflow-hidden my-auto p-6 sm:p-8"
+        className="relative w-full max-w-lg bg-[#101010] border border-white/15 rounded-3xl shadow-[0_25px_70px_rgba(0,0,0,0.95)] overflow-hidden my-auto p-6 sm:p-8"
       >
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full text-[#A5ACB8] hover:text-white hover:bg-white/10 transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3366]"
+          className="absolute top-5 right-5 p-2 rounded-full text-[#B3B3B3] hover:text-white hover:bg-white/10 transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F45132]"
           aria-label="Close dialog"
         >
           <X className="w-5 h-5" />
         </button>
 
         <div className="flex items-center gap-2 mb-3">
-          <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#FF3366]/20 text-[#FF3366] border border-[#FF3366]/30">
+          <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#F45132]/20 text-[#F45132] border border-[#F45132]/30">
             {details.badge}
           </span>
-          <span className="text-xs text-[#A5ACB8]">Films Unfiltered Platform</span>
+          <span className="text-xs text-[#B3B3B3]">Films Unfiltered Platform</span>
         </div>
 
         <div className="flex items-center gap-3 mb-4">
-          <div className="p-3 rounded-2xl bg-white/5 border border-white/10 text-[#FF7048]">
+          <div className="p-3 rounded-2xl bg-white/5 border border-white/10 text-[#F45132]">
             <Icon className="w-6 h-6" />
           </div>
           <h2 id="nav-modal-title" className="font-display font-bold text-2xl text-white">
@@ -149,18 +149,18 @@ export default function NavigationNoticeModal({ isOpen, onClose, destinationKey 
           </h2>
         </div>
 
-        <p className="text-sm text-[#A5ACB8] leading-relaxed mb-6">
+        <p className="text-sm text-[#B3B3B3] leading-relaxed mb-6">
           {details.description}
         </p>
 
         <div className="p-4 rounded-2xl bg-white/[0.03] border border-white/8 mb-6 space-y-2">
           <h4 className="text-xs font-semibold uppercase tracking-wider text-white flex items-center gap-1.5">
-            <Sparkles className="w-3.5 h-3.5 text-[#FF3366]" /> Key Inclusions
+            <Sparkles className="w-3.5 h-3.5 text-[#F45132]" /> Key Inclusions
           </h4>
-          <ul className="space-y-1.5 text-xs text-[#A5ACB8]">
+          <ul className="space-y-1.5 text-xs text-[#B3B3B3]">
             {details.upcomingFeatures.map((feat, i) => (
               <li key={i} className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#FF7048]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#F45132]" />
                 <span>{feat}</span>
               </li>
             ))}

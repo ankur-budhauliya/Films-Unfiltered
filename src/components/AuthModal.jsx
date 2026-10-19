@@ -52,13 +52,13 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'signup' }) {
     >
       <div
         ref={modalRef}
-        className="relative w-full max-w-md bg-[#101722] border border-white/15 rounded-3xl shadow-[0_25px_70px_rgba(0,0,0,0.95)] overflow-hidden my-auto p-6 sm:p-8"
+        className="relative w-full max-w-md bg-[#101010] border border-white/15 rounded-3xl shadow-[0_25px_70px_rgba(0,0,0,0.95)] overflow-hidden my-auto p-6 sm:p-8"
       >
         {/* Close Button */}
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full text-[#A5ACB8] hover:text-white hover:bg-white/10 transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3366]"
+          className="absolute top-5 right-5 p-2 rounded-full text-[#B3B3B3] hover:text-white hover:bg-white/10 transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F45132]"
           aria-label="Close dialog"
         >
           <X className="w-5 h-5" />
@@ -66,17 +66,17 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'signup' }) {
 
         {/* Demo Tag */}
         <div className="flex items-center gap-2 mb-3">
-          <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#FF3366]/20 text-[#FF3366] border border-[#FF3366]/30">
+          <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#F45132]/20 text-[#F45132] border border-[#F45132]/30">
             Frontend Auth Demo
           </span>
-          <span className="text-xs text-[#A5ACB8]">No backend connected</span>
+          <span className="text-xs text-[#B3B3B3]">No backend connected</span>
         </div>
 
         {/* Title */}
         <h2 id="auth-modal-title" className="font-display font-extrabold text-2xl text-white mb-1">
           {mode === 'signup' ? 'Join Films Unfiltered' : 'Welcome Back'}
         </h2>
-        <p className="text-xs text-[#A5ACB8] mb-5">
+        <p className="text-xs text-[#B3B3B3] mb-5">
           {mode === 'signup'
             ? 'Connect with artists, discover live shows, and collaborate.'
             : 'Access your creative scene and collaboration requests.'}
@@ -90,7 +90,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'signup' }) {
             className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all cursor-pointer ${
               mode === 'login'
                 ? 'bg-white/15 text-white shadow-sm'
-                : 'text-[#A5ACB8] hover:text-white'
+                : 'text-[#B3B3B3] hover:text-white'
             }`}
           >
             Log In
@@ -100,8 +100,8 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'signup' }) {
             onClick={() => { setMode('signup'); setSubmitted(false); }}
             className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all cursor-pointer ${
               mode === 'signup'
-                ? 'bg-gradient-to-r from-[#FF3366] to-[#FF7048] text-white shadow-sm'
-                : 'text-[#A5ACB8] hover:text-white'
+                ? 'bg-[#F45132] text-white shadow-sm'
+                : 'text-[#B3B3B3] hover:text-white'
             }`}
           >
             Sign Up
@@ -116,7 +116,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'signup' }) {
             <h3 className="font-display font-bold text-lg text-white">
               {mode === 'signup' ? 'Demo Account Created!' : 'Demo Login Successful!'}
             </h3>
-            <p className="text-xs text-[#A5ACB8]">
+            <p className="text-xs text-[#B3B3B3]">
               Authentication placeholder executed cleanly. Live backend OAuth / database authentication will plug in seamlessly.
             </p>
           </div>
@@ -124,11 +124,11 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'signup' }) {
           <form onSubmit={handleSubmit} className="space-y-4">
             {mode === 'signup' && (
               <div>
-                <label className="block text-xs font-medium text-[#A5ACB8] mb-1.5" htmlFor="auth-name">
+                <label className="block text-xs font-medium text-[#B3B3B3] mb-1.5" htmlFor="auth-name">
                   Creator or Stage Name
                 </label>
                 <div className="relative">
-                  <User className="w-4 h-4 text-[#A5ACB8] absolute left-3 top-1/2 -translate-y-1/2" />
+                  <User className="w-4 h-4 text-[#B3B3B3] absolute left-3 top-1/2 -translate-y-1/2" />
                   <input
                     id="auth-name"
                     type="text"
@@ -136,18 +136,18 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'signup' }) {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="e.g. Maya Lin"
-                    className="w-full pl-9 pr-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#FF3366] focus:ring-1 focus:ring-[#FF3366]"
+                    className="w-full pl-9 pr-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#F45132] focus:ring-1 focus:ring-[#F45132]"
                   />
                 </div>
               </div>
             )}
 
             <div>
-              <label className="block text-xs font-medium text-[#A5ACB8] mb-1.5" htmlFor="auth-email">
+              <label className="block text-xs font-medium text-[#B3B3B3] mb-1.5" htmlFor="auth-email">
                 Email Address
               </label>
               <div className="relative">
-                <Mail className="w-4 h-4 text-[#A5ACB8] absolute left-3 top-1/2 -translate-y-1/2" />
+                <Mail className="w-4 h-4 text-[#B3B3B3] absolute left-3 top-1/2 -translate-y-1/2" />
                 <input
                   id="auth-email"
                   type="email"
@@ -155,17 +155,17 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'signup' }) {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="creator@filmsunfiltered.com"
-                  className="w-full pl-9 pr-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#FF3366] focus:ring-1 focus:ring-[#FF3366]"
+                  className="w-full pl-9 pr-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#F45132] focus:ring-1 focus:ring-[#F45132]"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs font-medium text-[#A5ACB8] mb-1.5" htmlFor="auth-password">
+              <label className="block text-xs font-medium text-[#B3B3B3] mb-1.5" htmlFor="auth-password">
                 Password
               </label>
               <div className="relative">
-                <Lock className="w-4 h-4 text-[#A5ACB8] absolute left-3 top-1/2 -translate-y-1/2" />
+                <Lock className="w-4 h-4 text-[#B3B3B3] absolute left-3 top-1/2 -translate-y-1/2" />
                 <input
                   id="auth-password"
                   type="password"
@@ -173,14 +173,14 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'signup' }) {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
-                  className="w-full pl-9 pr-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#FF3366] focus:ring-1 focus:ring-[#FF3366]"
+                  className="w-full pl-9 pr-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#F45132] focus:ring-1 focus:ring-[#F45132]"
                 />
               </div>
             </div>
 
             <button
               type="submit"
-              className="w-full py-2.5 rounded-xl text-sm font-semibold text-white gradient-accent-bg shadow-lg shadow-[#FF3366]/25 hover:brightness-110 active:scale-[0.99] transition-all cursor-pointer flex items-center justify-center gap-2 mt-2"
+              className="w-full py-2.5 rounded-xl text-sm font-semibold text-white bg-[#F45132] hover:bg-[#E04326] shadow-lg shadow-[#F45132]/25 hover:brightness-110 active:scale-[0.99] transition-all cursor-pointer flex items-center justify-center gap-2 mt-2"
             >
               <span>{mode === 'signup' ? 'Create Demo Profile' : 'Sign In'}</span>
               <ArrowRight className="w-4 h-4" />

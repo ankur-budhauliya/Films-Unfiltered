@@ -85,24 +85,24 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
       return;
     }
 
-    // Demo confirmation
+    // Demo confirmation only
     setNewsletterStatus('success');
-    setNewsletterMessage("You're on the guest list! (Frontend demo confirmation — no real emails sent).");
+    setNewsletterMessage("You're on the list! (Frontend demo confirmation — no real emails sent).");
     setEmailInput('');
   };
 
   return (
     <footer
-      className="relative bg-[#080B10] text-[#F7F7F8] border-t border-white/10 pt-16 sm:pt-20 pb-12 overflow-hidden selection:bg-[#FF3366] selection:text-white"
+      className="relative bg-[#000000] text-[#FFFFFF] border-t border-white/10 pt-16 sm:pt-20 pb-12 overflow-hidden selection:bg-[#F45132] selection:text-white"
       aria-label="Films Unfiltered Site Footer"
     >
-      {/* Background Subtle Atmospheric Lighting */}
+      {/* Restrained Orange Ambient Lighting */}
       <div
-        className="absolute bottom-0 right-1/4 w-[500px] h-[500px] rounded-full bg-[#FF3366]/6 blur-[180px] pointer-events-none"
+        className="absolute bottom-0 right-1/4 w-[450px] h-[450px] rounded-full bg-[#F45132]/6 blur-[160px] pointer-events-none"
         aria-hidden="true"
       />
       <div
-        className="absolute top-1/4 left-10 w-[450px] h-[450px] rounded-full bg-[#FF7048]/5 blur-[170px] pointer-events-none"
+        className="absolute top-1/4 left-10 w-[400px] h-[400px] rounded-full bg-[#F45132]/4 blur-[150px] pointer-events-none"
         aria-hidden="true"
       />
 
@@ -110,59 +110,61 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
         
         {/* ================= 1. TOP CTA SECTION ================= */}
         <section
-          className="relative rounded-3xl overflow-hidden glass-panel border border-white/15 p-8 sm:p-12 lg:p-14 shadow-[0_30px_70px_rgba(0,0,0,0.85)]"
+          className="relative rounded-3xl overflow-hidden bg-[#101010] border border-white/12 p-8 sm:p-12 lg:p-14 shadow-[0_30px_70px_rgba(0,0,0,0.95)]"
           aria-labelledby="footer-cta-headline"
         >
-          {/* Subtle Ambient Gradient behind the CTA */}
+          {/* Subtle Orange Glow behind the CTA */}
           <div
-            className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-gradient-to-br from-[#FF3366]/20 to-[#FF7048]/10 blur-[100px] pointer-events-none"
+            className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-[#F45132]/12 blur-[100px] pointer-events-none"
             aria-hidden="true"
           />
           <div
-            className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-[#101722] blur-[90px] pointer-events-none"
+            className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-black/60 blur-[90px] pointer-events-none"
             aria-hidden="true"
           />
 
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* CTA Copy */}
             <div className="lg:col-span-8 space-y-3 sm:space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#101722]/80 border border-white/10 w-fit backdrop-blur-md">
-                <Sparkles className="w-3.5 h-3.5 text-[#FF3366]" aria-hidden="true" />
-                <span className="text-[10.5px] font-bold tracking-[0.2em] uppercase text-[#A5ACB8]">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/70 border border-white/10 w-fit backdrop-blur-md">
+                <Sparkles className="w-3.5 h-3.5 text-[#F45132]" aria-hidden="true" />
+                <span className="text-[10.5px] font-bold tracking-[0.2em] uppercase text-[#B3B3B3]">
                   Join The Movement
                 </span>
               </div>
               <h2
                 id="footer-cta-headline"
-                className="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[42px] text-white tracking-tight leading-[1.12]"
+                className="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[42px] text-[#FFFFFF] tracking-tight leading-[1.14]"
               >
                 Your people. Your scene.{' '}
-                <span className="gradient-accent-text block sm:inline">
+                <span className="text-[#F45132] block sm:inline drop-shadow-[0_0_25px_rgba(244,81,50,0.35)]">
                   Your next big moment.
                 </span>
               </h2>
-              <p className="text-sm sm:text-base text-[#A5ACB8] max-w-2xl leading-relaxed">
+              <p className="text-sm sm:text-base text-[#B3B3B3] max-w-2xl leading-relaxed">
                 Discover artists, find shows around you, and connect with the creative community shaping what's next.
               </p>
             </div>
 
             {/* CTA Buttons */}
             <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-start lg:justify-end">
+              {/* Primary Button: Orange with white text */}
               <button
                 type="button"
                 onClick={() => onOpenNavNotice ? onOpenNavNotice('discover') : null}
-                className="group relative px-6 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-white gradient-accent-bg hover:brightness-110 shadow-lg shadow-[#FF3366]/25 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] cursor-pointer flex items-center justify-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3366] focus-visible:ring-offset-2 focus-visible:ring-offset-[#101722]"
+                className="group relative px-6 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-white bg-[#F45132] hover:bg-[#e04326] shadow-lg shadow-[#F45132]/25 hover:shadow-[#F45132]/40 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] cursor-pointer flex items-center justify-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F45132] focus-visible:ring-offset-2 focus-visible:ring-offset-[#101010]"
               >
                 <span>Explore Artists</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
               </button>
+              {/* Secondary Button: Transparent black background, subtle white border, white text, orange hover */}
               <button
                 type="button"
                 onClick={() => onOpenNavNotice ? onOpenNavNotice('shows') : null}
-                className="px-6 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-[#F7F7F8] bg-white/[0.04] hover:bg-white/[0.08] border border-white/15 hover:border-white/30 transition-all duration-300 cursor-pointer flex items-center justify-center gap-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3366]"
+                className="px-6 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-white bg-black/60 hover:bg-[#F45132]/10 border border-white/15 hover:border-[#F45132]/60 hover:text-[#F45132] transition-all duration-300 cursor-pointer flex items-center justify-center gap-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F45132]"
               >
                 <span>Discover Shows</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#A5ACB8]" aria-hidden="true" />
+                <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -171,30 +173,29 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
         {/* ================= 2. MAIN FOOTER 4-COLUMN LAYOUT ================= */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pt-2">
           
-          {/* Column 1 — Brand (4 cols on lg) */}
-          <div className="lg:col-span-4 space-y-5">
-            {/* Typographic Logo matching Navbar */}
+          {/* Column 1 — Brand with Official Logo (4 cols on lg) */}
+          <div className="lg:col-span-4 space-y-4">
+            {/* Authoritative Brand Logo */}
             <a
               href="#home"
-              className="group flex flex-col items-start focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3366] rounded-sm transition-transform active:scale-95 w-fit"
+              className="group inline-flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F45132] rounded-lg transition-transform active:scale-95"
               aria-label="Films Unfiltered - Back to top"
             >
-              <div className="font-display font-black text-lg tracking-[0.28em] text-[#F7F7F8] leading-none uppercase group-hover:text-white transition-colors flex items-center gap-1.5">
-                <span>FILMS</span>
-                <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#FF3366] group-hover:scale-125 transition-transform" />
-              </div>
-              <div className="font-display font-medium text-[10.5px] tracking-[0.42em] text-[#A5ACB8] leading-tight uppercase group-hover:text-[#F7F7F8] transition-colors">
-                UNFILTERED
-              </div>
+              <img
+                src="/films-unfiltered-logo.jpg"
+                alt="Films Unfiltered official logo"
+                className="h-20 sm:h-24 w-auto object-contain mix-blend-screen -ml-1.5 transition-opacity group-hover:opacity-90"
+                loading="lazy"
+              />
             </a>
 
-            <p className="text-xs sm:text-sm text-[#A5ACB8] leading-relaxed max-w-sm">
+            <p className="text-xs sm:text-sm text-[#B3B3B3] leading-relaxed max-w-sm">
               A home for artists, live experiences, and creative connections. Discover what's happening and find your place in the scene.
             </p>
 
             {/* Social Media Icon Links */}
-            <div className="space-y-2">
-              <span className="text-[10px] font-semibold tracking-wider uppercase text-[#A5ACB8]">
+            <div className="space-y-2 pt-2">
+              <span className="text-[10px] font-semibold tracking-wider uppercase text-[#B3B3B3]">
                 Follow Our Scene
               </span>
               <div className="flex items-center gap-2.5">
@@ -210,7 +211,7 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
                         e.preventDefault();
                         alert(`Demo link: ${social.name} profile (${social.handle}) will link to official social channels in production.`);
                       }}
-                      className="p-2.5 rounded-xl bg-white/[0.04] border border-white/10 hover:border-[#FF3366]/40 hover:bg-[#FF3366]/10 text-[#A5ACB8] hover:text-white transition-all duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3366]"
+                      className="p-2.5 rounded-xl bg-[#101010] border border-white/10 hover:border-[#F45132]/60 hover:bg-[#F45132]/10 text-[#B3B3B3] hover:text-[#F45132] transition-all duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F45132]"
                       aria-label={`Follow Films Unfiltered on ${social.name}`}
                     >
                       <Icon className="w-4 h-4" />
@@ -223,7 +224,7 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
 
           {/* Column 2 — Discover (2.5 cols on lg) */}
           <div className="lg:col-span-2 sm:col-span-1 space-y-4">
-            <h3 className="font-display font-bold text-xs uppercase tracking-wider text-white">
+            <h3 className="font-display font-bold text-xs uppercase tracking-wider text-[#FFFFFF]">
               {FOOTER_SECTIONS.discover.heading}
             </h3>
             <ul className="space-y-2.5 text-xs sm:text-[13px]">
@@ -232,7 +233,7 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
                   <button
                     type="button"
                     onClick={(e) => handleLinkClick(e, link)}
-                    className="text-[#A5ACB8] hover:text-white transition-all duration-200 hover:translate-x-1 cursor-pointer text-left focus:outline-none focus-visible:text-[#FF3366] focus-visible:underline"
+                    className="text-[#B3B3B3] hover:text-[#FFFFFF] hover:translate-x-1 focus-visible:text-[#F45132] focus-visible:underline transition-all duration-200 cursor-pointer text-left"
                   >
                     {link.label}
                   </button>
@@ -243,7 +244,7 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
 
           {/* Column 3 — For Artists (2.5 cols on lg) */}
           <div className="lg:col-span-2 sm:col-span-1 space-y-4">
-            <h3 className="font-display font-bold text-xs uppercase tracking-wider text-white">
+            <h3 className="font-display font-bold text-xs uppercase tracking-wider text-[#FFFFFF]">
               {FOOTER_SECTIONS.forArtists.heading}
             </h3>
             <ul className="space-y-2.5 text-xs sm:text-[13px]">
@@ -252,7 +253,7 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
                   <button
                     type="button"
                     onClick={(e) => handleLinkClick(e, link)}
-                    className="text-[#A5ACB8] hover:text-white transition-all duration-200 hover:translate-x-1 cursor-pointer text-left focus:outline-none focus-visible:text-[#FF3366] focus-visible:underline"
+                    className="text-[#B3B3B3] hover:text-[#FFFFFF] hover:translate-x-1 focus-visible:text-[#F45132] focus-visible:underline transition-all duration-200 cursor-pointer text-left"
                   >
                     {link.label}
                   </button>
@@ -261,9 +262,9 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
             </ul>
           </div>
 
-          {/* Column 4 — Company & Resources (3 cols on lg) */}
+          {/* Column 4 — Company (3 cols on lg) */}
           <div className="lg:col-span-3 space-y-4">
-            <h3 className="font-display font-bold text-xs uppercase tracking-wider text-white">
+            <h3 className="font-display font-bold text-xs uppercase tracking-wider text-[#FFFFFF]">
               {FOOTER_SECTIONS.company.heading}
             </h3>
             <ul className="space-y-2.5 text-xs sm:text-[13px]">
@@ -272,7 +273,7 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
                   <button
                     type="button"
                     onClick={(e) => handleLinkClick(e, link)}
-                    className="text-[#A5ACB8] hover:text-white transition-all duration-200 hover:translate-x-1 cursor-pointer text-left focus:outline-none focus-visible:text-[#FF3366] focus-visible:underline"
+                    className="text-[#B3B3B3] hover:text-[#FFFFFF] hover:translate-x-1 focus-visible:text-[#F45132] focus-visible:underline transition-all duration-200 cursor-pointer text-left"
                   >
                     {link.label}
                   </button>
@@ -288,15 +289,15 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
           className="pt-10 border-t border-white/10"
           aria-labelledby="newsletter-heading"
         >
-          <div className="glass-panel rounded-2xl p-6 sm:p-8 border border-white/12 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div className="rounded-2xl p-6 sm:p-8 bg-[#101010] border border-white/12 flex flex-col lg:flex-row lg:items-center justify-between gap-6 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
             <div className="space-y-1.5 max-w-md">
               <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#FF3366]" />
-                <h3 id="newsletter-heading" className="font-display font-bold text-lg sm:text-xl text-white">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#F45132]" />
+                <h3 id="newsletter-heading" className="font-display font-bold text-lg sm:text-xl text-[#FFFFFF]">
                   Stay in the scene.
                 </h3>
               </div>
-              <p className="text-xs sm:text-sm text-[#A5ACB8] leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#B3B3B3] leading-relaxed">
                 Get updates on upcoming shows, new artists, and creative opportunities.
               </p>
             </div>
@@ -309,7 +310,7 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
                     <label htmlFor="newsletter-email" className="sr-only">
                       Your email address
                     </label>
-                    <Mail className="w-4 h-4 text-[#A5ACB8] absolute left-3.5 top-1/2 -translate-y-1/2" aria-hidden="true" />
+                    <Mail className="w-4 h-4 text-[#B3B3B3] absolute left-3.5 top-1/2 -translate-y-1/2" aria-hidden="true" />
                     <input
                       id="newsletter-email"
                       type="email"
@@ -319,13 +320,13 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
                         if (newsletterStatus) setNewsletterStatus(null);
                       }}
                       placeholder="Your email address"
-                      className="w-full pl-10 pr-4 py-2.5 bg-white/5 border border-white/15 rounded-xl text-xs sm:text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#FF3366] focus:ring-1 focus:ring-[#FF3366] transition-colors"
+                      className="w-full pl-10 pr-4 py-2.5 bg-[#000000] border border-white/15 rounded-xl text-xs sm:text-sm text-[#FFFFFF] placeholder-[#B3B3B3]/50 focus:outline-none focus:border-[#F45132] focus:ring-1 focus:ring-[#F45132] transition-colors"
                       aria-required="true"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-white gradient-accent-bg hover:brightness-110 shadow-md shadow-[#FF3366]/20 transition-all cursor-pointer shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3366]"
+                    className="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-white bg-[#F45132] hover:bg-[#e04326] shadow-md shadow-[#F45132]/20 hover:shadow-[#F45132]/35 transition-all cursor-pointer shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F45132]"
                   >
                     Subscribe
                   </button>
@@ -345,7 +346,7 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
                 {newsletterStatus === 'error' && (
                   <p
                     role="alert"
-                    className="text-xs text-[#FF7048] flex items-center gap-1.5 pt-0.5 animate-in fade-in"
+                    className="text-xs text-[#F45132] flex items-center gap-1.5 pt-0.5 animate-in fade-in"
                   >
                     <AlertCircle className="w-3.5 h-3.5 shrink-0" />
                     <span>{newsletterMessage}</span>
@@ -357,7 +358,7 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
         </section>
 
         {/* ================= 4. BOTTOM FOOTER BAR ================= */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#A5ACB8]">
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#B3B3B3]">
           <p className="text-center sm:text-left">
             © {currentYear} Films Unfiltered. All rights reserved.
           </p>
@@ -365,21 +366,21 @@ export default function Footer({ onOpenNavNotice, onOpenAuth }) {
             <button
               type="button"
               onClick={() => onOpenNavNotice ? onOpenNavNotice('privacy') : null}
-              className="hover:text-white transition-colors cursor-pointer focus:outline-none focus-visible:text-[#FF3366]"
+              className="hover:text-[#FFFFFF] transition-colors cursor-pointer focus:outline-none focus-visible:text-[#F45132]"
             >
               Privacy
             </button>
             <button
               type="button"
               onClick={() => onOpenNavNotice ? onOpenNavNotice('terms') : null}
-              className="hover:text-white transition-colors cursor-pointer focus:outline-none focus-visible:text-[#FF3366]"
+              className="hover:text-[#FFFFFF] transition-colors cursor-pointer focus:outline-none focus-visible:text-[#F45132]"
             >
               Terms
             </button>
             <button
               type="button"
               onClick={() => onOpenNavNotice ? onOpenNavNotice('contact') : null}
-              className="hover:text-white transition-colors cursor-pointer focus:outline-none focus-visible:text-[#FF3366]"
+              className="hover:text-[#FFFFFF] transition-colors cursor-pointer focus:outline-none focus-visible:text-[#F45132]"
             >
               Contact
             </button>
