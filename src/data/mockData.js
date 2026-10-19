@@ -301,3 +301,114 @@ export const DISCOVER_ARTISTS = [
     demoTag: 'Demo Profile',
   },
 ];
+
+/**
+ * Categories for the Explore Shows section filter tabs
+ */
+export const SHOW_CATEGORIES = [
+  { id: 'all', label: 'All Events' },
+  { id: 'live-music', label: 'Live Music' },
+  { id: 'dj-nights', label: 'DJ Nights' },
+  { id: 'comedy', label: 'Comedy' },
+  { id: 'theatre', label: 'Theatre' },
+  { id: 'dance', label: 'Dance' },
+];
+
+/**
+ * Preset demo locations for show exploration
+ */
+export const SHOW_LOCATIONS = [
+  'All Locations',
+  'Noida',
+  'Delhi',
+  'Gurugram',
+  'Mumbai',
+  'Bengaluru',
+];
+
+/**
+ * Editorial demonstration catalog for "Explore Shows" section
+ * NOTE: All events, venues, and schedules are fictional for frontend demonstration.
+ */
+export const ALL_SHOWS = [
+  {
+    id: 'indie-after-dark',
+    title: 'Indie After Dark',
+    category: 'live-music',
+    categoryLabel: 'Live Music',
+    isFeatured: true,
+    date: '24 October 2026',
+    time: '7:30 PM',
+    city: 'Noida',
+    venue: 'The Acoustic Attic, Sector 18, Noida',
+    description: 'An intimate night of independent music, emerging voices, and unforgettable live performances.',
+    longDescription: 'Curated by Films Unfiltered, Indie After Dark brings together regional indie-pop acts, acoustic songwriters, and emerging vocalists in an atmospheric, low-lit setting. Experience raw originals, collaborative acoustic sets, and artist conversations.',
+    image: '/artists/event.jpg',
+    badge: 'Featured Showcase',
+    demoTag: 'Fictional Demo Event',
+  },
+  {
+    id: 'midnight-frequencies',
+    title: 'Midnight Frequencies',
+    category: 'dj-nights',
+    categoryLabel: 'DJ Night',
+    isFeatured: false,
+    date: '25 October 2026',
+    time: '10:00 PM',
+    city: 'Noida',
+    venue: 'Warehouse 9, Sector 18, Noida',
+    description: 'Electronic music and late-night sets.',
+    longDescription: 'A late-night sonic journey through melodic techno, experimental electronica, and driving club rhythms featuring underground regional DJs and synchronized visual projections.',
+    image: '/artists/dj_live.jpg',
+    badge: 'Club Night',
+    demoTag: 'Fictional Demo Event',
+  },
+  {
+    id: 'mic-check',
+    title: 'Mic Check',
+    category: 'comedy',
+    categoryLabel: 'Comedy',
+    isFeatured: false,
+    date: '26 October 2026',
+    time: '8:00 PM',
+    city: 'Delhi',
+    venue: 'The Laugh Cellar, Hauz Khas, Delhi',
+    description: 'An evening of stand-up and fresh material.',
+    longDescription: 'Stand-up comics take the stage to test brand-new jokes, sharp observational crowd work, and tour-ready material in an intimate club environment.',
+    image: '/artists/comedian_speaking.jpg',
+    badge: 'Stand-up Showcase',
+    demoTag: 'Fictional Demo Event',
+  },
+  {
+    id: 'theatre-unplugged',
+    title: 'Theatre Unplugged',
+    category: 'theatre',
+    categoryLabel: 'Theatre',
+    isFeatured: false,
+    date: '31 October 2026',
+    time: '7:00 PM',
+    city: 'Noida',
+    venue: 'Studio Blackbox, Sector 62, Noida',
+    description: 'An intimate independent theatre performance.',
+    longDescription: 'An independent dramatic performance exploring interpersonal connection, modern ambitions, and vulnerability, staged with minimal set pieces to emphasize intense acting and character depth.',
+    image: '/artists/actor_portrait.jpg',
+    badge: 'Stage Play',
+    demoTag: 'Fictional Demo Event',
+  },
+  {
+    id: 'move-in-motion',
+    title: 'Move in Motion',
+    category: 'dance',
+    categoryLabel: 'Dance',
+    isFeatured: false,
+    date: '1 November 2026',
+    time: '6:30 PM',
+    city: 'Gurugram',
+    venue: 'Pulse Movement Studio, Cyber City, Gurugram',
+    description: 'Contemporary dance and movement performances.',
+    longDescription: 'An evocative movement showcase featuring contemporary dancers, physical theatre choreographers, and collaborative soundscapes that push the boundaries of modern movement.',
+    image: '/artists/dancer_stage.jpg',
+    badge: 'Dance Showcase',
+    demoTag: 'Fictional Demo Event',
+  },
+];

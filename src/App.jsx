@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import DiscoverArtists from './components/DiscoverArtists';
+import ExploreShows from './components/ExploreShows';
 import Footer from './components/Footer';
 import AuthModal from './components/AuthModal';
 import NavigationNoticeModal from './components/NavigationNoticeModal';
@@ -36,6 +37,9 @@ export default function App() {
         <DiscoverArtists
           onOpenNavNotice={handleOpenNavNotice}
           onOpenAuth={handleOpenAuth}
+        />
+        <ExploreShows
+          onOpenNavNotice={handleOpenNavNotice}
         />
       </main>
 
