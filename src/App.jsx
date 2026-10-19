@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import DiscoverArtists from './components/DiscoverArtists';
 import ExploreShows from './components/ExploreShows';
+import CollaborateCreate from './components/CollaborateCreate';
 import Footer from './components/Footer';
 import AuthModal from './components/AuthModal';
 import NavigationNoticeModal from './components/NavigationNoticeModal';
@@ -39,6 +40,10 @@ export default function App() {
           onOpenAuth={handleOpenAuth}
         />
         <ExploreShows
+          onOpenNavNotice={handleOpenNavNotice}
+        />
+        <CollaborateCreate
+          onOpenAuth={handleOpenAuth}
           onOpenNavNotice={handleOpenNavNotice}
         />
       </main>

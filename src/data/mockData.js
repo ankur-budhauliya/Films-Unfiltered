@@ -412,3 +412,82 @@ export const ALL_SHOWS = [
     demoTag: 'Fictional Demo Event',
   },
 ];
+
+/**
+ * Categories for the Collaborate & Create section filters
+ */
+export const COLLABORATION_CATEGORIES = [
+  { id: 'all', label: 'All Opportunities' },
+  { id: 'music', label: 'Music' },
+  { id: 'film', label: 'Film' },
+  { id: 'performance', label: 'Performance' },
+  { id: 'dance', label: 'Dance' },
+];
+
+/**
+ * Editorial sample collaboration calls
+ * NOTE: All listings are fictional demonstration content for frontend presentation.
+ */
+export const COLLABORATION_OPPORTUNITIES = [
+  {
+    id: 'opp-vocalist',
+    title: 'Looking for a Vocalist',
+    category: 'music',
+    categoryLabel: 'Music',
+    location: 'Delhi',
+    creator: 'Acoustic & Synth Lab',
+    creatorRole: 'Music Producer',
+    description: 'An independent music producer is looking for a vocalist for an original track.',
+    fullDescription: 'Currently completing an atmospheric indie-electronic EP. Seeking an expressive vocalist (open to any vocal range) to co-write lyrics and record lead vocal melodies for an original featured single.',
+    requirements: ['Original songwriting collaboration', 'Acoustic / indie vocal style', 'Studio recording session in Delhi NCR'],
+    image: '/artists/singer.jpg',
+    tags: ['Vocals', 'Songwriting', 'Recording Session'],
+    demoTag: 'Demo Opportunity',
+  },
+  {
+    id: 'opp-short-film',
+    title: 'Short Film Casting',
+    category: 'film',
+    categoryLabel: 'Film',
+    location: 'Noida',
+    creator: 'Sector 62 Filmworks',
+    creatorRole: 'Independent Director',
+    description: 'An independent filmmaker is looking for actors for a short-film project.',
+    fullDescription: 'Casting two expressive lead actors for a 15-minute narrative drama shooting in Noida. The story explores late-night conversations, ambition, and departures. Table read scheduled next week.',
+    requirements: ['Method or naturalistic acting', '2 Lead Roles (playing ages 22-35)', 'Weekend filming schedule in Noida'],
+    image: '/artists/filmmaker_camera.jpg',
+    tags: ['Acting', 'Lead Roles', 'Narrative Drama'],
+    demoTag: 'Demo Opportunity',
+  },
+  {
+    id: 'opp-comedy-showcase',
+    title: 'Live Comedy Showcase',
+    category: 'performance',
+    categoryLabel: 'Performance',
+    location: 'Gurugram',
+    creator: 'The Underground Collective',
+    creatorRole: 'Comedy Curator',
+    description: 'A comedy collective is seeking performers for a collaborative showcase.',
+    fullDescription: 'Curating a collaborative 90-minute evening featuring 4 distinct comedic voices. Seeking comics with 7-10 minutes of polished observational material or improv sketch work ready for a live audience.',
+    requirements: ['7-10 minute tight set', 'Observational / improv comedy', 'Rehearsal and lineup run-through in Gurugram'],
+    image: '/artists/comedian_stage2.jpg',
+    tags: ['Stand-up', 'Improv', 'Stage Showcase'],
+    demoTag: 'Demo Opportunity',
+  },
+  {
+    id: 'opp-dance-collab',
+    title: 'Dance Video Collaboration',
+    category: 'dance',
+    categoryLabel: 'Dance',
+    location: 'Delhi',
+    creator: 'Kinesis Studio & Lens',
+    creatorRole: 'Choreographer & DP',
+    description: 'A choreographer and videographer want to create a collaborative dance film.',
+    fullDescription: 'Seeking contemporary movement artists to co-create an outdoor conceptual dance film shot in Delhi heritage architecture. Looking for dancers comfortable with fluid improvisation and cinematic lighting.',
+    requirements: ['Contemporary movement background', 'Comfortable with location shooting', 'Improvisational choreography'],
+    image: '/artists/dancer_pose.jpg',
+    tags: ['Contemporary Dance', 'Cinematography', 'Concept Film'],
+    demoTag: 'Demo Opportunity',
+  },
+];
+
